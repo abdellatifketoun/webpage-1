@@ -1,0 +1,363 @@
+body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home{
+  background: url(https://i.ibb.co/M716mDc/untitle2343d.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+
+
+.righthome{
+  width: 60%;
+height: 100vh;
+float: right;
+
+}
+
+
+.shopnow{
+  background: url(https://i.ibb.co/XzLDqtc/sample.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: black    ;
+  border-style: solid;
+  border-width: 10px 0px 0px 0px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+/* footer update*/
+.linkfot{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.linkfot:hover{
+color: red;
+
+}
+.leftfooter{
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-family: Bahnschrift Light;
+text-transform: uppercase;
+
+  
+}
+p{
+  font-family: Bahnschrift Light;
+text-transform: capitalize;
+}
+.soclink{
+
+}
+img{
+  width: 60px;
+}
+.soci{
+  float: right;
+  position: relative;
+  left: -20px;
+  top: 30px;
+}
+/* footer update end*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #545454 ; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+
+/* alert */
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  z-index: 99;
+}
+
+.callout-header {
+  padding: 10px;
+  background: url(https://ak0.picdn.net/shutterstock/videos/22555540/thumb/12.jpg);
+ 
+  font-size: 3em;
+  color: black;
+  text-shadow: gray 2px 4px 6px;
+  text-align: center;
+  font-family: Franklin Gothic Medium;
+}
+
+.callout-container {
+  padding: 15px;
+  background-size: cover;
+  background: url(https://cdn-images.farfetch-contents.com/14/55/51/82/14555182_22328781_480.jpg); 
+  color: black;
+  font-size: 1.3em;
+}
+.boma{
+  color: black;
+  background: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.boma:hover{
+  color: white;
+  background: black;
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #5B677A;
+}
+
+
+
+/* photos 2cont start */
+
+.grop-info{
+  
+  display: flex;
+  width:50%;
+  justify-content: space-around;
+}
+.singlegrope{
+  float: right; 
+  width:360px;
+  height:400px;
+  padding:24px;
+  
+  position: relative;
+  right: 350px;
+  top: 125px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6 ease-out;
+  box-shadow: 0 0px 0.7px rgb(0,0,0,0.5);
+  margin: 20px;
+  
+  
+}
+
+.singlegrope:hover{
+  transform : translateY(5px);
+  box-shadow: none;
+}
+.singlegrope:hover:before{
+  opacity: 1;
+}
+.singlegrope:hover .grop-info{
+  opacity: 1;
+ transform : translateY(0); 
+}
+.singlegrope:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:100%;
+  height:100%;
+  background: lineargradient( to top, #000, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.singlegrope img{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  object-fit: cover;
+  
+  
+}
+
+.singlegrope .grop-info{
+  position: relative;
+  z-index: 3;
+  color: black;
+  opacity:0;
+  transform : translateY(60px); 
+  transition: 0.5s;
+  
+}
+
+.grop-info h2{
+  margin: 0;
+  padding: 5px;
+  font-family: monospace;
+  letter-spacing: 3px;
+  position: absolute;
+  left: -300px;
+  top: -200px; 
+  color: black;
+  text-shadow: 2px 3px 4px gray ;
+  font-size:4em;
+  font-family:Malgun Gothic ;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  
+}
+strong{
+  color: red;
+  text-shadow: 2px 3px 4px orangered ;
+  font-family: Bahnschrift SemiBold;
+font-size: 3em;
+letter-spacing: 5px;
+position: absolute;
+  left: -200px;
+  top: -150px; 
+}
+
+/* photos 2cont end */
+.home2{
+  position: absolute;
+}
+.home3{
+  overflow: hidden;
+  background-image: linear-gradient(to right, #CA2323  , yellow  );
+  width: 100%;
+  height: 100vh;
+  background: url(https://data.photofunky.net/output/image/6/4/7/2/64729b/photofunky.gif);
+  background-repeat: no-repeat;
+  filter: blur(1.2px);
+  background-size: 100% 100vh;
+}
+
+.downhome{
+  color: white;
+  font-size: 2em;
+  margin-top: -60px;
+  font-family: Bahnschrift Light;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  
+  }
+  h2{
+    
+    color : white;
+    text-align: center;
+    font-size: 9em;
+    word-spacing: 3px;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+    margin-top: 190px;
+    text-transform: uppercase;
+    text-shadow: 9px -3px 10px black;
+    font-family:Franklin Gothic Medium;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  a.shop{
+    font-size: 2.5em;
+    padding: 15px;
+    margin: 4px ;
+    color: black;
+    text-shadow: 2px 2px gray;
+    border: solid white 2px;
+    position: relative;
+    left: 640px;
+    top: 40px;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-family: Franklin Gothic Medium;
+    text-transform: uppercase;
+    box-shadow: 4px 3px 3px #888888;
+    background-image: linear-gradient( to right, gray  , white  );
+    background-color: transparent;
+  }
+  a.shop:hover{
+    font-size: 2.5em;
+    color: gray ;
+    border: solid white 2px;
+    background: white;
+   text-decoration: none;
+   letter-spacing: 10px;
+   box-shadow: 0px 1px 2px #E22C2C;
+   text-shadow: 1px 2px 3px black;
+  
+  }
+
+  h3{
+    color: white;
+    text-align: center;
+    font-size: 7em;
+    word-spacing: 3px;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+    margin-top: 190px;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 4px #CF0F83;
+    font-family:Franklin Gothic Medium;
+    position: relative;
+    top: -60px;
+  }
